@@ -13,7 +13,7 @@
       expect = chai.expect;
     });
 
-    describe('getRules', function() {
+    context('getRules', function() {
       var path;
       var rules;
 
@@ -39,7 +39,7 @@
       });
     });
 
-    describe('getGroup', function() {
+    context('getGroup', function() {
       var res;
       var mockRules;
 
@@ -83,7 +83,7 @@
       });
     });
 
-    describe('getPolicy', function() {
+    context('getPolicy', function() {
       it('Should return the permissions specified', function() {
         var mockResource = 'users';
         var mockGroup = {
@@ -102,7 +102,7 @@
       });
     });
 
-    describe('getRole', function() {
+    context('getRole', function() {
       var res;
 
       beforeEach(function(done) {
@@ -149,7 +149,7 @@
       });
     });
 
-    describe('resource', function() {
+    context('resource', function() {
       var next;
 
       beforeEach(function() {
